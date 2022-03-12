@@ -1,0 +1,12 @@
+version: "3"
+services:
+  reddit_frontend:
+    container_name: reddit_frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.build
+    command: npm start
+    volumes:
+      - ./:/usr/src/reddit-frontend
+    ports:
+      - "3000:3000"

@@ -1,0 +1,23 @@
+.sign-up-grid {
+    display: grid;
+    grid-template-areas:
+        "left-space top-space right-space"
+        "left-space sign-up-form right-space"
+        "left-space bottom-space right-space";
+    grid-template-columns: auto 700px auto;
+    grid-template-rows: auto min-content auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sign-up-form {
+    grid-area: sign-up-form;
+    display: grid;
+    grid-template-areas:
+        "fName fName lName lName"
+        "email email password password"
+        "left-space sign-up sign-up right-space"
+        "left-space cancel cancel right-space";
+    column-gap: 10px;
+    row-gap: 10px;
+}

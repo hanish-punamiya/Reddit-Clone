@@ -1,0 +1,29 @@
+.vote-item {
+    margin-left: 8px !important;
+}
+
+.community-tile {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 5px !important;
+}
+
+.community-vote-area {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.community-clickable-area {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+.community-description-content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}

@@ -1,0 +1,28 @@
+#community-search-page {
+    display: grid;
+    grid-template-areas: 
+        'left-space options-bar right-space'
+        'left-space communities right-space'
+        'left-space pagination right-space';
+    grid-template-columns: auto 1000px auto;
+    padding: 30px 0;
+}
+
+#options-bar {
+    grid-area: options-bar;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#communities-list {
+    grid-area: communities;
+}
+
+#communities-pagination {
+    grid-area: pagination;
+    display: flex;
+    justify-content: center;
+    padding: 5px
+}

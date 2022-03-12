@@ -1,0 +1,53 @@
+
+.post-tile {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 5px;
+}
+
+.post-vote-area {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.post-vote-item {
+    margin-left: 8px !important;
+}
+
+.post-clickable-area {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+.post-description-content {
+    display: grid !important;
+    height: 100%;
+    grid-template-areas: 
+        'title title title'
+        'description description description'
+        'community-name user post-date' !important;
+    justify-items: flex-start;
+    grid-column-gap: 10px;
+}
+
+.post-tile-title {
+    grid-area: title;
+}
+
+.post-tile-description {
+    grid-area: description;
+}
+
+.post-tile-community {
+    grid-area: community-name;
+}
+
+.post-tile-user {
+    grid-area: user;
+}
+
+.post-tile-date {
+    grid-area: post-date;
+}

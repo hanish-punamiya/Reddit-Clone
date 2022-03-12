@@ -1,0 +1,48 @@
+
+#post-page {
+    display: grid;
+    grid-template-areas:
+        "left post-content right";
+    grid-template-columns: 1fr 800px 1fr;
+}
+
+#post-content {
+    grid-area: post-content;
+    padding: 10px;
+}
+
+#post-content-section {
+    padding: 15px;
+}
+
+#post-gallery-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-gallery-image {
+    height: 500px !important;
+    width: auto !important;
+}
+
+#post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#new-comment-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.child-comment-modal {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}

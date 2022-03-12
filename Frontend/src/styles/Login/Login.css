@@ -1,0 +1,21 @@
+.login-page {
+    display: grid;
+    grid-template-areas:
+        "left-space top-space right-space"
+        "left-space login-form right-space"
+        "left-space bottom-space right-space";
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: auto min-content auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-form {
+    grid-area: login-form;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-item {
+    margin-bottom: 10px !important;
+}

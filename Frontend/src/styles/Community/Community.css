@@ -1,0 +1,72 @@
+
+#community-home-page {
+    display: grid;
+    grid-template-areas: 
+        'left-space post-options description'
+        'left-space posts description'
+        'left-space posts-pagination description';
+    grid-template-columns: 1fr 800px 1fr;
+    grid-row-gap: 15px;
+    column-gap: 30px;
+    margin: 15px 15px;
+}
+
+#post-list-options {
+    grid-area: post-options;
+    height: min-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#posts-list {
+    grid-area: posts;
+}
+
+#posts-pagination {
+    grid-area: posts-pagination;
+    height: min-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#community-info {
+    grid-area: description;
+    padding: 30px;
+}
+
+.community-description-item {
+    margin: 10px auto;
+}
+
+#post-modal {
+    display: flex !important;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#create-post-window {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 700px;
+    height: 70vh;
+    padding: 30px;
+}
+
+#create-post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post-element {
+    margin: 10px !important;
+}
+
+.community-gallery-item {
+    height: 400px !important;
+    width: auto !important;
+}

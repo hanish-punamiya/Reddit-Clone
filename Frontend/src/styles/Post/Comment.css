@@ -1,0 +1,23 @@
+.comment-tile {
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 5px auto;
+}
+
+.comment-vote-section {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.comment-vote-item {
+    margin-left: 8px !important;
+}
+
+.comment-content {
+    display: grid;
+    grid-template-areas:
+        "text text text"
+        "user date reply";
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 5px;
+}
